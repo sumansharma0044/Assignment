@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="outer-box">
+        <div class="container">
+            <h1>Customer Survey Form</h1>
+            <form id="surveyForm">
+                <table>
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Date Of Birth</td>
+                        <td><input type="date" id="dob" name="dob" placeholder="Enter your DOB" required></td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td>
+                            <select id="country" name="country" required>
+                                <option value="select">Select</option>
+                                <option value="India">India</option>
+                                <option value="USA">USA</option>
+                                <option value="Canada">Canada</option>
+                                <option value="UK">UK</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <label for="male">Male     <input type="checkbox" id="male" name="gender" value="Male" required></label>
+                            <label for="female">Female <input type="checkbox" id="female" name="gender" value="Female" required></label>
+                            <label for="female">Other  <input type="checkbox" id="oyher" name="gender" value="Other" required></label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Profession</td>
+                        <td><input type="text" id="profession" name="profession" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number</td>
+                        <td><input type="tel" id="mobile" name="mobile" required></td>
+                    </tr>
+                </table>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="func.js"></script>
+</body>
+
+</html>
